@@ -1,0 +1,16 @@
+domain: trq1.cronjob
+layout:
+- go.kubebuilder.io/v3
+projectName: cronjob-tutorial
+repo: trq1.crontab/cronjob
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: trq1.cronjob
+  group: batch
+  kind: CronJob
+  path: trq1.crontab/cronjob/api/v1
+  version: v1
+version: "3"
